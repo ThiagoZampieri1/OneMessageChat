@@ -20,18 +20,17 @@ class CreateMainActivity:  AppCompatActivity() {
         databaseReference = FirebaseDatabase.getInstance()
 
         amb.subscribeButton.setOnClickListener {
-            val conversationId = amb.conversationIdEditText.text.toString().trim()
             val initialMessage = amb.initialMessageEditText.text.toString().trim()
 
-            if (conversationId.isEmpty() || initialMessage.isEmpty()) {
+            if (initialMessage.isEmpty()) {
                 showToast("Preencha todos os campos")
             } else {
-                subscribeToConversation(conversationId, initialMessage)
+                subscribeToConversation(initialMessage)
             }
         }
     }
 
-    private fun subscribeToConversation(conversationId: String, initialMessage: String) {
+    private fun subscribeToConversation(initialMessage: String) {
         val conversationsRef = databaseReference.reference.child("conversas")
         val newConversationRef = conversationsRef.push()
         newConversationRef.setValue(initialMessage)
