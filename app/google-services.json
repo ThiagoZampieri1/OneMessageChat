@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "154330162858",
+    "project_id": "onemessagechat-4559f",
+    "storage_bucket": "onemessagechat-4559f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154330162858:android:aef93e9440b40beea812d3",
+        "android_client_info": {
+          "package_name": "com.example.onemessagechat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANmkr3zozrBogWjL7bqXkMtQbRhNUudIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
